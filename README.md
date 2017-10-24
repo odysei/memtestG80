@@ -53,6 +53,12 @@ MemtestG80 uses the MIT/X licensed popt library to handle command line
 arguments; precompiled static libraries are provided for Linux and OS X, but
 dynamic libraries for Windows.
 
+### Notes
+
+Note that different versions of CUDA/nvcc have different gcc/g++ compatibility.
+For example, CUDA/nvcc 8 supports GCC <=5.X, while GCC 6+ is not supported, see
+[CUDA release notes](http://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html).
+
 ## USING MEMTESTG80 AS A LIBRARY
 
 We encourage software developers to use MemtestG80 as a code library in their
